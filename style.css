@@ -18,7 +18,7 @@
 }
 
 .navbar.navbar-expand-lg.navbar-light.bg-light {
-    position: absolute;
+    position: fixed;
     border-radius: 8px;
     padding: 16px;
     background-color: rgba(29,37,81,0.89) !important;
@@ -91,6 +91,11 @@
 	object-position: left;
 }
 
+.imagetable {
+	padding-top:125px;
+	margin-left: auto;
+	margin-right: auto;
+}
 .imagetable table{
 	margin-left: auto;
 	margin-right: auto;
@@ -109,7 +114,7 @@
 	position: relative;
 	background: rgba(255,255,255,1.00);
 	border-radius: 25px;
-	z-index: 10;
+	z-index: 20;
 	transition-property: all;
 	transition-duration: 0.3s;
 	transition-timing-function: ease;
