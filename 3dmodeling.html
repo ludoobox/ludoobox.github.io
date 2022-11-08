@@ -10,19 +10,8 @@
 	<link href="style.css" rel="stylesheet" type="text/css">
 	<title>Model Viewer</title>
 	<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-	  <style>
-		  model-viewer{
-			  width: 1080px;
-			  height: 720px;
-			  margin: 0 auto;
-			  
-		  }
-	  </style>
-  <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
-  <script>var __adobewebfontsappname__="dreamweaver"</script>
-
 </head>
-  <body>
+  <body class="models-base">
   	<div class="container-fluid">
 <nav class="navbar navbar-expand-lg navbar-light bg-light"> <a class="navbar-brand" href="index.html"><img src="assets/logo/mylogo.png" alt=""/></a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span></button>
@@ -38,63 +27,54 @@
   </div>
 </nav>
 
-<model-viewer id="modelviewer" src="" camera-controls auto-rotate shadow-intensity="1" loading="auto"></model-viewer>
-
-		
-<div class="row" >
-  <div class="col-xl-2">
-	  <button type="button" class="btn btn-lg" onClick=modelname("test.glb") >
-		<img src="images/orange.png" alt="">
+<div class="vertical-center">		
+	<div class="container-fluid modelviewer">
+		<model-viewer id="modelviewer" src="assets/test.glb" camera-controls auto-rotate shadow-intensity="1" loading="auto"></model-viewer>
+		<div class="d-flex flex-row justify-content-center">
+		<div class="p-2">
+		<button class="btn btn-lg models-image" onClick=modelname("test.glb") >
+			<img src="images/orange.png" alt="">
 		</button>
-	  <p></p>
-	  <footer>Orange</footer>
-  </div>
-  <div class="col-xl-2">
-	  <button type="button" class="btn btn-lg" onClick=modelname("gangbeast.glb") >
-		<img src="images/pink.png" alt="">
-	  </button>
-	  <p></p>
-	  <footer>Pink</footer>
-  </div>
-  <div class="col-xl-2">
-	  <button type="button" class="btn btn-lg" onClick=modelname("iron-man.glb")>
-		<img src="images/red.png">
+		<div class="models-text">Orange</div>
+		</div>
+	
+		<div class="p-2">
+		<button class="btn btn-lg models-image" onClick=modelname("gangbeast.glb")>
+			<img src="images/pink.png" alt="">
 		</button>
-	  <p></p>
-	  <footer>Red</footer>
-  </div>
-  <div class="col-xl-2">
-	  <button type="button" class="btn btn-lg">
-		<img src="images/green.png">
+		<div class="models-text">Pink</div>
+		</div>
+	
+		<div class="p-2">
+		<button class="btn btn-lg models-image" onClick=modelname("iron-man.glb")>
+			<img src="images/red.png" alt="">
 		</button>
-	  <p></p>
-	  <footer>Green</footer>
-  </div>
-  <div class="col-xl-2">
-    <button type="button" class="btn btn-lg">
-	<img src="images/purple.png">
+		<div class="models-text">Red</div>
+		</div>
+	
+		<div class="p-2">
+		<button class="btn btn-lg models-image" onClick=modelname("test.glb")>
+			<img src="images/green.png" alt="">
 		</button>
-	  <p></p>
-	  <footer>Purple</footer>
-  </div>
+		<div class="models-text">Green</div>
+		</div>
+	
+		<div class="p-2">
+		<button class="btn btn-lg models-image" onClick=modelname("test.glb")>
+			<img src="images/purple.png" alt="">
+		</button>
+		<div class="models-text">Purple</div>
+		</div>
+	
+		</div>
 </div>
-  <script>
+</div>
 	  
+<script>
 	  function modelname(fileName) {
 		  const model = document.getElementById("modelviewer");
 		  model.src = "assets/"+fileName;
 	  }
-	  
-	  
-	  //var button = document.getElementById("modelbtn");
-	  //var value = button.getAttribute("value")
-	  
-	  //button.onclick = changeSrc(value);
-	  
-	  //function changeSrc(modelname){
-		  //document.getElementById("modelviewer").src = "assets/"+ value +".glb";
-		  //console.log(value);
-	  //}
   </script>  
 </div>
 <!-- body code goes here -->
