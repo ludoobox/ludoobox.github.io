@@ -1,0 +1,99 @@
+@charset "utf-8";
+.background{
+    background-image: -webkit-linear-gradient(270deg,rgba(51,51,51,1.00) 0%,rgba(118,118,118,1.00) 100%);
+    background-image: -moz-linear-gradient(270deg,rgba(51,51,51,1.00) 0%,rgba(118,118,118,1.00) 100%);
+    background-image: -o-linear-gradient(270deg,rgba(51,51,51,1.00) 0%,rgba(118,118,118,1.00) 100%);
+    background-image: linear-gradient(180deg,rgba(51,51,51,1.00) 0%,rgba(118,118,118,1.00) 100%);
+
+}
+
+
+.container-fluid{
+	padding-right: 0px!important;
+    padding-left: 0px!important;
+	padding: 0px
+}
+
+.my-name{
+    position: absolute;
+	left: 10vw;
+	top: 15vh;
+	text-align: center;
+}
+
+.name-text{
+	font-size: 4vw;
+    font-family: Nunito;
+    font-weight: bolder;
+    text-align: right;
+	color: white;
+}
+
+.contact-btn{
+	background-color: lightgray;
+	border-radius: 25px;
+	font-size: 1.5vw;
+	font-family: Nunito;
+	padding-left:10px;
+	padding-right: 10px;
+}
+
+.projects-container{
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.project-row{
+	justify-content: center;
+}
+
+.image-container{
+	width: 12vw;
+	height:auto;
+}
+
+.project-back-btn{
+	position:fixed;
+	color: rgba(193,193,193,1.00);
+	font-size: 2.5vw;
+	left: 2%;
+	top: 3%;
+}
+
+.project-name{
+	color:rgba(193,193,193,1.00);
+	font-family: Tilt Warp;
+	text-align: center;
+	font-size: 5vw;
+	
+}
+
+.project-footer{
+	color:rgba(193,193,193,1.00);
+	font-family: Tilt Warp;
+	text-align: center;
+	font-size: 2vw;
+}
+
+.project-image{
+	padding-bottom: 20px;
+    width: 80vw;
+    height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.project-soft-ico img{
+	width: 4vw;
+	height: auto;
+}
+
+.project-soft-ico{
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 10px;
+}
