@@ -27,24 +27,41 @@ html{
 	text-align: center;
 }
 
+.intro-video{
+	z-index: 5;
+	height: auto;
+	width: 100vw;
+}
+
+.spacer{
+	padding-top: 1.5vh;
+}
+
 .my-name{
     position:absolute ;
 	left: 10vw;
 	top: 15vh;
 	text-align: center;
+	z-index: 10;
 }
 
 .name-text{
+	color: white;
 	font-size: 4vw;
     font-family: Nunito;
     font-weight: bolder;
-    text-align: right;
-	color: white;
+    text-align: center;
+	background-color: lightslategray;
+	border-radius: 50px;
+	padding-left: 20px;
+	padding-right: 20px;
+
 }
+
 
 .contact-btn{
 	background-color: lightgray;
-	border-radius: 25px;
+	border-radius: 50px;
 	font-size: 1.5vw;
 	font-family: Nunito;
 	padding-left:10px;
@@ -109,4 +126,109 @@ html{
 	margin-left: auto;
 	margin-right: auto;
 	padding-bottom: 10px;
+}
+
+.cv-page{
+	background: linear-gradient(#FFFFFF, #D8DBE3);
+}
+
+.cv {
+	text-align: center;
+	z-index: 0;
+}
+
+.cv-btns-container{
+	top: 5.5vh;
+	margin-left: 3vw;
+	position: absolute;
+	text-align: left;
+}
+.cv-btns {
+	width: 11vw;
+	color:white;
+	margin-top: 1vw;
+	font-family: Oswald;
+	border-radius: 25px;
+	text-align: center;
+	font-size: 1.2vw;
+}
+.cv-dl-btn{
+	background:rgba(145,70,255,1.00);
+}
+.cv-pdf-btn{
+	background:rgba(221,31,34,1.00);
+}
+.cv-bck-btn{
+	background:rgba(0,0,0,1.00);
+}
+.cv-dl-btn:hover{
+	background: #7025DD;
+	color: white;
+	transition-duration: 0.2s;
+}
+.cv-pdf-btn:hover{
+	background: rgba(180,25,27,1.00);
+	color: white;
+	transition-duration: 0.2s;
+}
+.cv-bck-btn:hover{
+	background: rgba(71,71,71,1.00);
+	color: white;
+	transition-duration: 0.2s;
+}
+.about-container{
+	margin-top:10vh;
+	background: #A5A8DC;
+	align-items: center;
+	border-radius: 25px;
+	padding-bottom: 1.5vh;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	padding-top: 4vh;
+	box-shadow: 0 0 1.5vh rgba(0,0,0,0.2);
+	overflow: hidden!important;
+}
+.about-container-fluid{
+	overflow: hidden;
+	min-height: 100vh;
+	background: linear-gradient(rgba(9,0,87,1.00),rgba(165,168,220,1.00));
+}
+.about-container .image img{
+	border-radius: 25px;
+	width: 100%;
+	height: 100%;
+}
+.about-container .text{
+	padding-right: 40px;
+	text-align: justify;
+	font-family: nunito;
+	font-size: 2vh;
+	color: white;
+}
+.about-container .about-button{
+	background: rgba(99,108,217,1.00);
+	margin-top: 15px;
+	width: 100px;
+	border-radius: 50px;
+	color: white;
+}
+.soft-ico{
+	text-align: left;
+	padding-bottom: 2vh;
+}
+.soft-ico img{
+	padding-right: 0.25vw;
+	height: 4vh;
+	width: auto;
+}
+.soft-text{
+	color: white;
+	font-family: nunito;
+	font-size: 2vh;
+}
+.about-video{
+	padding-top:5vh;
+	padding-bottom: 5vh;
+	height: 55vh;
+	width: auto;
 }
