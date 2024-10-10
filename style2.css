@@ -1,0 +1,120 @@
+/* CSS Document */
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "nunito";
+}
+
+body{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(217deg,rgba(71,146,227,0.71),rgba(118,160,175,0)),linear-gradient(127deg,rgba(233,98,174,0.71),rgba(71,37,37,0.00)),linear-gradient(336deg,rgba(255,229,0,0.74),rgba(98,195,97,0.00));
+}
+
+main{
+	width: 50vw;
+	height: 60vh;
+	display: flex;
+	flex-direction: column;
+	background: rgba(41,144,156,.4);
+	box-shadow: 1.5vw 5vh 50px -10px rgba(0,0,0,0.5);
+	border-radius: 1.5vw;
+	padding: 2vh;
+}
+
+.whole-section{
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+.left-section{
+	width: 70%;
+	align-content: center;
+	justify-content: center;
+}
+
+.left-section-title{
+	height: 20%;
+	display: flex;
+	align-items: left;
+	padding-left: 2.2vw;
+	flex-direction: column;
+	padding-top: 1vh;
+	color: white;
+}
+
+.left-section-top{
+	height: 70%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.responsive-video{
+	height: 100%;
+	width:100%;
+	max-height: 100%;
+}
+
+.left-section-bottom{
+	height: 10%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+
+.left-section-bottom img {
+	height: 3.5vh;
+}
+
+.right-section{
+	width: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.right-section img{
+	border-radius: 50%;
+	border: .4vw solid white;
+}
+.right-section-top{
+	height: 60%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1vw;
+}
+.responsive-image{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+	max-height: 100%;
+}
+.right-section-bottom{
+	height: 40%;
+	width: 100%;
+	display: flex;
+	justify-content:top;
+	align-items:center;
+	flex-direction: column;
+}
+.right-section-bottom a{
+	padding-bottom: .5vh;
+	padding-top: .5vh;
+}
+.right-section-bottom button{
+	background: rgba(20,112,123,1.00);
+	border-radius: 2.5vh;
+	color: white;
+	border: 0.3vw solid white;
+}
